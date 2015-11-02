@@ -1,0 +1,2 @@
+sumMergeSizeOrca.txt:
+	the sum of merge commit size (LOC) (including those ones with this subbranch as both source & target branch). e.g., branch A, from 1st day to 3rd day, it syncs up with trunk branch 2 times (LOC 5 + 7 for each time), and at the end of 3rd day, it merged back to trunk branch with size 3. So the sum is 15.(The test column can be ignored.)

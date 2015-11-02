@@ -1,0 +1,24 @@
+> aa=read.table("avgLOCperDevOrca.txt",sep=",",header=TRUE)
+> boxplot(aa$AVERAGE)
+> bb=read.table("avgLOCperDevLumira.txt",sep=",",header=TRUE)
+> boxplot(bb$AVERAGE)
+> boxplot(aa$AVERAGE)
+> boxplot(bb$AVERAGE)
+> summary(aa)
+    USERNAME     AVERAGE      
+ d019309: 1   Min.   :  0.00  
+ d029388: 1   1st Qu.: 56.86  
+ d032419: 1   Median :115.50  
+ d037232: 1   Mean   :147.61  
+ d038701: 1   3rd Qu.:219.64  
+ d044576: 1   Max.   :598.60  
+ (Other):94                   
+> summary(bb)
+    USERNAME      AVERAGE     
+ d051781:  1   Min.   :  1.0  
+ i000574:  1   1st Qu.: 22.5  
+ i025668:  1   Median : 70.5  
+ i051121:  1   Mean   :135.0  
+ i058586:  1   3rd Qu.:171.2  
+ i068512:  1   Max.   :870.0  
+ (Other):150                  
