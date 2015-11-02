@@ -231,7 +231,6 @@ Which approach makes integration easier?
 Size of merge commit. Distribution across all merge commits.
 
 \textbf{Findings:} 
-
 \textbf{It is easier to merge branches into main trunk with branch-based approach.} Figure \ref{fig:integrationEffort} is the beanplot of merge commit size distributions for the two period of project for each merge commit. We can see the median value of all merge commits' size is much smaller than that of toggle-based approach. This means it cost less effort to merge sub-branches into main trunk in the branch-based hierarchy. 
 
 \begin{figure*}
@@ -239,6 +238,32 @@ Size of merge commit. Distribution across all merge commits.
 \caption{Beanplot of integration effort.}
 \label{fig:integrationEffort}
 \end{figure*}
+
+
+\textbf{It takes more effort to sync up with branch-based approach while the effort of merge branches back to trunk is in the same balllock.} Figure ~\ref{fig:syncupMergeSum} shows the distribution of the sum of sync up commits and final merges, as well as final merges seperately. We can see in terms of the sum value, the branch-based approach (mean of 72.17) is much higher than that of toggle-based approach (mean of 41.37). This makes sense, since in branch-based approach development cycle is longer and more sync ups need to be done regularly. While with toggle-based approach, the sub-branches merge back to trunk more frequently as there are fewer sync ups.
+
+The mean value of final of merge of toggle-based approach (mean of 15.37) is slightly higer than that of branch-based approach (mean of 4.236). This may be because the merge back to trunk is not often enough to avoid all conflicts with toggleing mechanism. Therefore the average size of merge commit is higher with toggle-based approach. However, they are still in the same balllock. The statistics is shown in Table ~\ref{tab:syncupMergeSum}.
+
+\begin{figure*}
+	\includegraphics[width=0.95\textwidth]{figure/sum_merge_commit_by_branch_orca_filtered_filtered.pdf}
+	\label{fig:syncupMergeSum}
+	\caption{Beanplot of sum of sync up commits and final merge commits, as well as single final merges.}
+\end{figure*}
+
+\begin{table*}
+	\label{tab:syncupMergeSum}
+	\caption{Statistics of sum of sync up commits and final merge commits, as well as single final merges.}
+	\begin{tabular}{r|c|c}
+	\hline\noalign{\smallskip}
+		& branch-based (mean) & toggle-based (mean) \\
+	\noalign{\smallskip}\hline\noalign{\smallskip}
+	sum of sync ups and final merge & 72.17 & 41.37 \\
+	final merge & 4.236 & 15.37 \\
+	\noalign{\smallskip}\hline
+	\end{tabular}
+\end{table*}
+
+\hypobox{It takes more effort to sync up with branch-based approach while the integration effort of both approaches are in the same balllock.}
 
 
 \subsection{Productivity}
@@ -305,6 +330,38 @@ Figure ~\ref{subfig:abandoned_num} shows the number of abandoned and merged comm
 		\# merged commits & 48.00 & 590.0 \\
 		rate of abandoned commits & 19\% & 16\% \\
 		rate of merged commits & 78\% & 82\% \\
+	\end{tabular}
+\end{table*}
+
+
+\textbf{The workload per day is comparative for both approaches.} Figure ~\ref{fig:workdays} are the beanplot and scatter plot for the workload per day (the size of commits divided by the days required to develop it) for the two approaches, we can see they dont differ a lot. Table ~\ref{tab:workdays} is the statistics. We can see the \textbf{median} value of commit size and work load for branch-based approach is slightly higher while the \textbf{mean} value of branch-based aproach is lower than that of toggle-based appraoch. However, the median value of the working days of two approaches are the same while the mean value of branch-based appraoch is higher, which means the toggle-based approach increases the work efficiency.
+
+
+\begin{figure*}
+	\subfigure[\# of abandoned  and merged commits]{
+		\includegraphics[width=0.95\textwidth]{figure/workdays_per_commit_orca_noComma_filtered_filtered_filtered_beanplot.pdf}
+		\label{subfig:workdays_bean}
+	}
+	\subfigure[rate of abandoned and merged commits]{
+		\includegraphics[width=0.95\textwidth]{figure/workdays_per_commit_orca_noComma_filtered_scatter.pdf}
+		\label{subfig:workdays_scatter}
+	}
+\caption{The beanplot and scatter plot for work efficiency for branch-based and toggle-based approach.}
+\label{fig:workdays}
+\end{figure*}
+
+
+\begin{table*}
+	\caption{The number and rate of abandoned\/merged commits for baranch-based and toggle-based approach.}
+	\label{tab:workdays}
+	\begin{tabular}{r|c|c}
+			& branch-based & toggle-based\\
+		median of days & 1.00 & 1.00 \\
+		mean of days  & 1.55 & 1.21 \\
+		median of commit size & 37.0 & 34.0 \\
+		mean of commit size & 106.7 & 111.3 \\
+		median of workload rate & 32.0 & 31.0 \\
+		mean of workload rate & 94.79 & 103.6 \\
 	\end{tabular}
 \end{table*}
 

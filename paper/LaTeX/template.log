@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 NOV 2015 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 NOV 2015 17:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -250,78 +250,120 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: figure/beforeAfterIE.pdf Graphic file (type pdf)
 
 <use figure/beforeAfterIE.pdf>
-Package pdftex.def Info: figure/beforeAfterIE.pdf used on input line 238.
+Package pdftex.def Info: figure/beforeAfterIE.pdf used on input line 237.
 (pdftex.def)             Requested size: 321.09897pt x 277.45529pt.
+ [3 <./figure/beforeAfterIE.pdf>]
+<figure/sum_merge_commit_by_branch_orca_filtered_filtered.pdf, id=55, 361.35pt 
+x 361.35pt>
+File: figure/sum_merge_commit_by_branch_orca_filtered_filtered.pdf Graphic file
+ (type pdf)
+ <use figure/sum_merge_commit_by_branch_orca_filtered_filtered.pdf>
+Package pdftex.def Info: figure/sum_merge_commit_by_branch_orca_filtered_filter
+ed.pdf used on input line 248.
+(pdftex.def)             Requested size: 321.09897pt x 321.09874pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[4 <./figure/sum_merge_commit_by_branch_orca_filtered_filtered.pdf>]
+Overfull \hbox (6.92737pt too wide) in paragraph at lines 279--280
+[]\OT1/cmr/bx/n/10 The de-vel-op-ers' con-tri-bu-tion with toggle-based ap-proa
+ch is slightly
+ []
 
- [3 <./figure/beforeAfterIE.pdf>] <figure/avgLOC.pdf, id=55, 521.10474pt x 436.
-78973pt>
+<figure/avgLOC.pdf, id=104, 521.10474pt x 436.78973pt>
 File: figure/avgLOC.pdf Graphic file (type pdf)
-
-<use figure/avgLOC.pdf>
-Package pdftex.def Info: figure/avgLOC.pdf used on input line 258.
+ <use figure/avgLOC.pdf>
+Package pdftex.def Info: figure/avgLOC.pdf used on input line 283.
 (pdftex.def)             Requested size: 321.09897pt x 269.14728pt.
 
-<figure/successRateByRelOrcaNum.png, id=56, 770.88pt x 314.17375pt>
+[5 <./figure/avgLOC.pdf>]
+<figure/successRateByRelOrcaNum.png, id=143, 770.88pt x 314.17375pt>
 File: figure/successRateByRelOrcaNum.png Graphic file (type png)
 
 <use figure/successRateByRelOrcaNum.png>
 Package pdftex.def Info: figure/successRateByRelOrcaNum.png used on input line 
-270.
+295.
 (pdftex.def)             Requested size: 321.09897pt x 130.86385pt.
 
-<figure/successRateByRelOrcaRatio.png, id=58, 815.045pt x 314.17375pt>
+<figure/successRateByRelOrcaRatio.png, id=145, 815.045pt x 314.17375pt>
 File: figure/successRateByRelOrcaRatio.png Graphic file (type png)
 
 <use figure/successRateByRelOrcaRatio.png>
 Package pdftex.def Info: figure/successRateByRelOrcaRatio.png used on input lin
-e 274.
+e 299.
 (pdftex.def)             Requested size: 321.09897pt x 123.77368pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--275
+Underfull \hbox (badness 10000) in paragraph at lines 295--300
 [][]
  []
 
-[4 <./figure/avgLOC.pdf>]
-<figure/count_abandoned_per_week_num.pdf, id=97, 433.62pt x 433.62pt>
+<figure/count_abandoned_per_week_num.pdf, id=146, 433.62pt x 433.62pt>
 File: figure/count_abandoned_per_week_num.pdf Graphic file (type pdf)
 
 <use figure/count_abandoned_per_week_num.pdf>
 Package pdftex.def Info: figure/count_abandoned_per_week_num.pdf used on input 
-line 288.
+line 313.
 (pdftex.def)             Requested size: 321.09897pt x 321.11197pt.
 
-<figure/count_abandoned_per_week_rate.pdf, id=98, 433.62pt x 433.62pt>
+<figure/count_abandoned_per_week_rate.pdf, id=147, 433.62pt x 433.62pt>
 File: figure/count_abandoned_per_week_rate.pdf Graphic file (type pdf)
 
 <use figure/count_abandoned_per_week_rate.pdf>
 Package pdftex.def Info: figure/count_abandoned_per_week_rate.pdf used on input
- line 292.
+ line 317.
 (pdftex.def)             Requested size: 321.09897pt x 321.11197pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--293
+Underfull \hbox (badness 10000) in paragraph at lines 313--318
 [][]
  []
 
 
-LaTeX Warning: Float too large for page by 149.29622pt on input line 295.
+LaTeX Warning: Float too large for page by 149.29622pt on input line 320.
 
-[5 <./figure/successRateByRelOrcaNum.png> <./figure/successRateByRelOrcaRatio.p
-ng>] [6 <./figure/count_abandoned_per_week_num.pdf> <./figure/count_abandoned_p
-er_week_rate.pdf>] <figure/beforeAfterBug.pdf, id=196, 505.89pt x 417.7713pt>
+[6 <./figure/successRateByRelOrcaNum.png> <./figure/successRateByRelOrcaRatio.p
+ng>] [7 <./figure/count_abandoned_per_week_num.pdf> <./figure/count_abandoned_p
+er_week_rate.pdf>]
+<figure/workdays_per_commit_orca_noComma_filtered_filtered_filtered_beanplot.pd
+f, id=244, 361.35pt x 361.35pt>
+File: figure/workdays_per_commit_orca_noComma_filtered_filtered_filtered_beanpl
+ot.pdf Graphic file (type pdf)
+
+<use figure/workdays_per_commit_orca_noComma_filtered_filtered_filtered_beanplo
+t.pdf>
+Package pdftex.def Info: figure/workdays_per_commit_orca_noComma_filtered_filte
+red_filtered_beanplot.pdf used on input line 344.
+(pdftex.def)             Requested size: 321.09897pt x 321.09874pt.
+
+<figure/workdays_per_commit_orca_noComma_filtered_scatter.pdf, id=245, 361.35pt
+ x 361.35pt>
+File: figure/workdays_per_commit_orca_noComma_filtered_scatter.pdf Graphic file
+ (type pdf)
+
+<use figure/workdays_per_commit_orca_noComma_filtered_scatter.pdf>
+Package pdftex.def Info: figure/workdays_per_commit_orca_noComma_filtered_scatt
+er.pdf used on input line 348.
+(pdftex.def)             Requested size: 321.09897pt x 321.09874pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--349
+[][]
+ []
+
+
+LaTeX Warning: Float too large for page by 149.26976pt on input line 351.
+
+<figure/beforeAfterBug.pdf, id=246, 505.89pt x 417.7713pt>
 File: figure/beforeAfterBug.pdf Graphic file (type pdf)
 
 <use figure/beforeAfterBug.pdf>
-Package pdftex.def Info: figure/beforeAfterBug.pdf used on input line 329.
+Package pdftex.def Info: figure/beforeAfterBug.pdf used on input line 386.
 (pdftex.def)             Requested size: 321.09897pt x 265.17346pt.
- [7 <./figure/beforeAfterBug.pdf>]
+ [8] [9 <./figure/workdays_per_commit_orca_noComma_filtered_filtered_filtered_b
+eanplot.pdf> <./figure/workdays_per_commit_orca_noComma_filtered_scatter.pdf>] 
+[10 <./figure/beforeAfterBug.pdf>]
 (./template.aux) ) 
 Here is how much of TeX's memory you used:
- 2643 strings out of 493117
- 39695 string characters out of 6135433
- 96865 words of memory out of 5000000
- 6078 multiletter control sequences out of 15000+600000
+ 2666 strings out of 493117
+ 40896 string characters out of 6135433
+ 97944 words of memory out of 5000000
+ 6098 multiletter control sequences out of 15000+600000
  10088 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,8n,24p,962b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -335,10 +377,10 @@ cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/latxfont
 /lcirclew.pfb>
-Output written on template.pdf (7 pages, 469089 bytes).
+Output written on template.pdf (10 pages, 999165 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
+ 452 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

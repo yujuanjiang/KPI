@@ -63,3 +63,56 @@
  workstream_dmem          :54   11     :  1   Max.   :958.00   Max.   :922.00  
  (Other)                  :49   (Other): 12                                    
 > 
+
+
+———————
+
+aa=read.table("workdays_per_commit_orca_noComma_filtered_filtered.txt",sep=";")
+library(car)
+dev.new(width=5,height=5)
+par(mar=c(4.0,4.0,3.0,1.3))
+scatterplot(aa$V5~aa$V4|aa$V3,legend.title="two approaches",ylab="size of commits",xlab="# days",reg.line=FALSE)
+
+
+> aa=read.table("workdays_per_commit_orca_noComma_filtered_filtered_filtered_branch.txt",sep=";")
+> bb=read.table("workdays_per_commit_orca_noComma_filtered_filtered_filtered_toggle.txt",sep=";")
+> library(beanplot)
+> par(mar=c(4.0,4.0,3.0,1.3))
+> dev.new(width=5,height=5)
+> beanplot(list(aa$V5,bb$V5,aa$V4,bb$V4,aa$V7,bb$V7),side="b",col=list("black","grey"),names=c("size of commits","# days","rate"),ll=0,bw="nrd0")
+> summary(aa)
+                         V1            V2         V3             V4        
+ integration              :450   Min.   :487693   b:2259   Min.   : 1.000  
+ workstream_apdkpi        :303   1st Qu.:712868            1st Qu.: 1.000  
+ workstream_lumira        :293   Median :784602            Median : 1.000  
+ workstream_kpicharts     :272   Mean   :750302            Mean   : 1.546  
+ workstream_dmem          :221   3rd Qu.:866090            3rd Qu.: 1.000  
+ workstream_infrastructure:174   Max.   :922316            Max.   :87.000  
+ (Other)                  :546                                             
+       V5                  V6             V7        
+ Min.   :  0.0   May 22 2014: 103   Min.   :  0.00  
+ 1st Qu.:  9.0   Jan 26 2015:  90   1st Qu.:  8.00  
+ Median : 37.0   Apr 29 2015:  84   Median : 32.00  
+ Mean   :106.7   Jan 25 2015:  80   Mean   : 94.79  
+ 3rd Qu.:119.0   Apr 28 2015:  77   3rd Qu.: 99.50  
+ Max.   :990.0   Mar 25 2015:  74   Max.   :990.00  
+                 (Other)    :1751                   
+> summary(bb)
+                         V1             V2          V3              V4       
+ workstream_lumira        :3763   Min.   : 918087   t:12483   Min.   : 1.00  
+ workstream_dmem          :1744   1st Qu.:1031917             1st Qu.: 1.00  
+ workstream_apdkpi        :1428   Median :1144442             Median : 1.00  
+ workstream_modeling      : 907   Mean   :1127717             Mean   : 1.21  
+ vertical/allocation      : 797   3rd Qu.:1204748             3rd Qu.: 1.00  
+ workstream_infrastructure: 770   Max.   :1271320             Max.   :87.00  
+ (Other)                  :3074                                              
+       V5                  V6              V7       
+ Min.   :  0.0   Sep 24 2015:  191   Min.   :  0.0  
+ 1st Qu.:  9.0   Oct 22 2015:  175   1st Qu.:  8.0  
+ Median : 34.0   Sep 10 2015:  166   Median : 31.0  
+ Mean   :111.3   Sep 23 2015:  163   Mean   :103.6  
+ 3rd Qu.:129.0   Sep 9 2015 :  163   3rd Qu.:117.0  
+ Max.   :999.0   Sep 15 2015:  154   Max.   :999.0  
+                 (Other)    :11471                  
+> 
+

@@ -12,7 +12,7 @@ open(FILE,$file);
 while(<FILE>)
 {
     $_ =~ s/\n//g;
-    @tmp = split(",",$_);
+    @tmp = split(";",$_);
     unless($tmp[$column] > $threshold){print "$_\n";}
 }
 close(FILE);
