@@ -1,0 +1,65 @@
+> aa=read.table("count_abandoned_per_week_branch.txt",sep=",")
+> bb=read.table("count_abandoned_per_week_toggle.txt",sep=",")
+> summary(aa)
+        V1           V2              V3              V4        
+ 2014-W16: 1   Min.   :  1.0   Min.   : 0.00   Min.   :  0.00  
+ 2014-W17: 1   1st Qu.:  5.0   1st Qu.: 2.00   1st Qu.:  1.00  
+ 2014-W18: 1   Median : 54.0   Median : 9.00   Median : 48.00  
+ 2014-W20: 1   Mean   :104.5   Mean   :18.23   Mean   : 86.13  
+ 2014-W21: 1   3rd Qu.:159.0   3rd Qu.:27.00   3rd Qu.:142.00  
+ 2014-W22: 1   Max.   :420.0   Max.   :84.00   Max.   :336.00  
+ (Other) :47                                                   
+       V5               V6        
+ Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.1034   1st Qu.:0.5000  
+ Median :0.1892   Median :0.7768  
+ Mean   :0.2292   Mean   :0.6601  
+ 3rd Qu.:0.2891   3rd Qu.:0.8438  
+ Max.   :0.9000   Max.   :0.9574  
+                                  
+> summary(bb)
+        V1           V2               V3              V4       
+ 2015-W19: 1   Min.   :   3.0   Min.   :  2.0   Min.   :  1.0  
+ 2015-W20: 1   1st Qu.: 564.8   1st Qu.: 79.0   1st Qu.:430.0  
+ 2015-W21: 1   Median : 720.5   Median :104.5   Median :590.0  
+ 2015-W22: 1   Mean   : 651.3   Mean   :104.0   Mean   :531.5  
+ 2015-W23: 1   3rd Qu.: 811.2   3rd Qu.:129.8   3rd Qu.:679.8  
+ 2015-W24: 1   Max.   :1059.0   Max.   :201.0   Max.   :876.0  
+ (Other) :20                                                   
+       V5               V6        
+ Min.   :0.1155   Min.   :0.2500  
+ 1st Qu.:0.1390   1st Qu.:0.7818  
+ Median :0.1623   Median :0.8229  
+ Mean   :0.1801   Mean   :0.7769  
+ 3rd Qu.:0.1875   3rd Qu.:0.8437  
+ Max.   :0.5000   Max.   :0.8686  
+
+
+————————————
+
+> cc=read.table("sum_merge_commit_by_branch_orca_filtered_filtered_branch.txt",sep=",")
+> dd=read.table("sum_merge_commit_by_branch_orca_filtered_filtered_toggle.txt",sep=",")
+> library(beanplot)
+
+> dev.new(width=5,height=5)
+> par(mar=c(2.6,3.0,3.0,1.3))
+> beanplot(list(cc$V3,dd$V3,cc$V4,dd$V4),side="b",col=list("black","grey"),names=c("Sync ups + final merge","Final merge"),ll=0,bw="nrd0")
+> summary(cc)
+                         V1     V2           V3               V4         
+ workstream_infrastructure:19   b:72   Min.   :  0.00   Min.   :  0.000  
+ workstream_apdkpi        :11          1st Qu.:  0.00   1st Qu.:  0.000  
+ workstream_modeling      :11          Median :  0.00   Median :  0.000  
+ workstream_kpicharts     : 9          Mean   : 72.17   Mean   :  4.236  
+ workstream_collaboration : 8          3rd Qu.: 20.50   3rd Qu.:  0.000  
+ workstream_qa            : 6          Max.   :808.00   Max.   :165.000  
+ (Other)                  : 8                                            
+> summary(dd)
+                         V1           V2            V3               V4        
+ workstream_infrastructure:94   t      :467   Min.   :  0.00   Min.   :  0.00  
+ workstream_modeling      :86   1      :  7   1st Qu.:  0.00   1st Qu.:  0.00  
+ workstream_apdkpi        :72   2      :  2   Median :  0.00   Median :  0.00  
+ workstream_lumira        :70   3      :  2   Mean   : 41.37   Mean   : 15.37  
+ vertical/allocation      :67   082    :  1   3rd Qu.:  6.00   3rd Qu.:  0.00  
+ workstream_dmem          :54   11     :  1   Max.   :958.00   Max.   :922.00  
+ (Other)                  :49   (Other): 12                                    
+> 

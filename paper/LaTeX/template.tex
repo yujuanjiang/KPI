@@ -60,6 +60,16 @@ grestore
 % \journalname{myjournal}
 %
 
+\usepackage{fancybox}
+\usepackage{float}
+
+% ------------------------------------------------------------------------------	
+\newcommand{\hypobox}[1]{\begin{center}%	
+	\noindent\thicklines\setlength{\fboxsep}{8pt}%	
+	\cornersize{0.2}\Ovalbox{\begin{minipage}{3.0in}%	
+	\textit{#1}\end{minipage}} \end{center}}	
+% ------------------------------------------------------------------------------
+
 %%%%%%%%%%%%self-define%%%%%%%%%%%%%%%%%%
 \usepackage[tight,footnotesize]{subfigure}
 \begin{document}
@@ -241,7 +251,7 @@ Sum up LOC for each developer and success rate per commit.
 
 \textbf{Findings:} 
 
-\textbf{There is no difference between two aproaches in terms of developers' contribution.} Figure \ref{fig:LOC} demonstrates the distribution of LOC per developer. We can see the median value of LOC of both approaches do not differ a lot. Toggle-based approach is a bit higher.
+\textbf{The developers' contribution with toggle-based approach is slightly higher than that of branch-based approach.} Figure \ref{fig:LOC} demonstrates the distribution of LOC per developer. We can see the median value of LOC of both approaches do not differ a lot though toggle-based approach is still a bit higher.
 
 
 \begin{figure*}
@@ -251,7 +261,7 @@ Sum up LOC for each developer and success rate per commit.
 \end{figure*}
 
 
-\textbf{The number of commits and corresponding patch revisions are increasing while the rate is decreasing.} Figure \ref{subfig:successRateNum} shows the number of integrated commits and its corresponding patch revisions grouped by release. Before 2015-W18 is branch-based approach and after is toggle-based approach. We can see that the number of both increases significantly after adopting toggling mechanism. However, on the other way around the rate decreases. 
+\textbf{The number of commits and corresponding patch revisions are increasing while the rate is decreasing.} Figure ~\ref{subfig:successRateNum} shows the number of integrated commits and its corresponding patch revisions grouped by release. Before 2015-W18 is branch-based approach and after is toggle-based approach. We can see that the number of both increases significantly after adopting toggling mechanism. However, on the other way around the rate decreases. 
 
 \begin{figure*}
     \subfigure[\# of accepted commits and its corresponding patchset revisions]{
@@ -265,6 +275,42 @@ Sum up LOC for each developer and success rate per commit.
 \caption{Success rate and corresponding statistics per release.}
 \label{fig:successRate}
 \end{figure*}
+
+
+\textbf{Toggle-based approach caused more commits abandoned as well as merged per week, but less rate of abandoned commits after normalization.}
+Figure ~\ref{subfig:abandoned_num} shows the number of abandoned and merged commits per week for branch-based (black) and toggle-based (grey) approach respectivey. We can see that the toggle-based approach has much higher number of either abandoned (median of 104.5 compared to 9.00 of branch-based) or merged commits (median of 590.0 compared to 4.0 of toggle-based). In order to see how many commits out of all commits are abandoned or merged, we normalize the numbers by dividing by the sum of all commits, it turns out the rate of abandoned commits of toggle-based approach (median of 16\%) is lower than that of branch-based approach (median of 19\%) (as shown in Table ~\ref{tab:abandonedMergedCommits}).
+
+
+\begin{figure*}
+	\subfigure[\# of abandoned  and merged commits]{
+		\includegraphics[width=0.95\textwidth]{figure/count_abandoned_per_week_num.pdf}
+		\label{subfig:abandoned_num}
+	}
+	\subfigure[rate of abandoned and merged commits]{
+		\includegraphics[width=0.95\textwidth]{figure/count_abandoned_per_week_rate.pdf}
+		\label{subfig:abandoned_rate}
+	}
+\caption{The number and rate of abandoned\/merged commits for branch-based and toggle-based approach.}
+\label{fig:abandonedMergedCommits}
+\end{figure*}
+
+
+\begin{table*}
+	\caption{The number and rate of abandoned\/merged commits for baranch-based and toggle-based approach.}
+	\label{tab:abandonedMergedCommits}
+	\begin{tabular}{r|c|c}
+			& branch-based (median) & toggle-based (median) \\
+		\# sum & 54.0 & 720.5 \\
+		\# abandoned commit & 9.00 & 104.5 \\
+		\# merged commits & 48.00 & 590.0 \\
+		rate of abandoned commits & 19\% & 16\% \\
+		rate of merged commits & 78\% & 82\% \\
+	\end{tabular}
+\end{table*}
+
+
+\hypobox{The toggle-based approach has more merged commits and lower rate of abandoned commits.}
+
 
 
 \subsection{Quality Assurance}

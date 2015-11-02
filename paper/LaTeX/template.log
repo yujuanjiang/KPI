@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  21 OCT 2015 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  2 NOV 2015 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -114,18 +114,39 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen114
 \Gin@req@width=\dimen115
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box29
+\shadowsize=\dimen116
+\@Sbox=\box30
+\do@VerbBox=\toks17
+\the@fancyput=\toks18
+\this@fancyput=\toks19
+\EndVerbatimTokens=\toks20
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) (/usr/local/texlive/2014/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count106
+\float@exts=\toks21
+\float@box=\box31
+\@float@everytoks=\toks22
+\@floatcapt=\box32
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip43
 \subfigcapskip=\skip44
-\subfigcaptopadj=\dimen116
+\subfigcaptopadj=\dimen117
 \subfigbottomskip=\skip45
-\subfigcapmargin=\dimen117
+\subfigcapmargin=\dimen118
 \subfiglabelskip=\skip46
-\c@subfigure=\count106
-\c@lofdepth=\count107
-\c@subtable=\count108
-\c@lotdepth=\count109
+\c@subfigure=\count107
+\c@lofdepth=\count108
+\c@subtable=\count109
+\c@lotdepth=\count110
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -137,36 +158,36 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 Unknown journal: specify \journalname{<name of your journal>} in preambel
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count110
-\scratchdimen=\dimen118
-\scratchbox=\box29
-\nofMPsegments=\count111
-\nofMParguments=\count112
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count113
-\MPscratchDim=\dimen119
-\MPnumerator=\count114
-\makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks18
+\scratchcounter=\count111
+\scratchdimen=\dimen119
+\scratchbox=\box33
+\nofMPsegments=\count112
+\nofMParguments=\count113
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count114
+\MPscratchDim=\dimen120
+\MPnumerator=\count115
+\makeMPintoPDFobject=\count116
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -217,19 +238,19 @@ e
 ))
 SVJour3 warning: Missing \journalname
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 98.
+(Font)              <7> on input line 108.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 98.
+(Font)              <5> on input line 108.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 98.
+(Font)              <8> on input line 108.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 98.
+(Font)              <6> on input line 108.
 [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] <figure/beforeAfterIE.pdf, id=15, 443.12923pt x 382.90422pt>
 File: figure/beforeAfterIE.pdf Graphic file (type pdf)
 
 <use figure/beforeAfterIE.pdf>
-Package pdftex.def Info: figure/beforeAfterIE.pdf used on input line 228.
+Package pdftex.def Info: figure/beforeAfterIE.pdf used on input line 238.
 (pdftex.def)             Requested size: 321.09897pt x 277.45529pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -239,7 +260,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: figure/avgLOC.pdf Graphic file (type pdf)
 
 <use figure/avgLOC.pdf>
-Package pdftex.def Info: figure/avgLOC.pdf used on input line 248.
+Package pdftex.def Info: figure/avgLOC.pdf used on input line 258.
 (pdftex.def)             Requested size: 321.09897pt x 269.14728pt.
 
 <figure/successRateByRelOrcaNum.png, id=56, 770.88pt x 314.17375pt>
@@ -247,7 +268,7 @@ File: figure/successRateByRelOrcaNum.png Graphic file (type png)
 
 <use figure/successRateByRelOrcaNum.png>
 Package pdftex.def Info: figure/successRateByRelOrcaNum.png used on input line 
-260.
+270.
 (pdftex.def)             Requested size: 321.09897pt x 130.86385pt.
 
 <figure/successRateByRelOrcaRatio.png, id=58, 815.045pt x 314.17375pt>
@@ -255,31 +276,55 @@ File: figure/successRateByRelOrcaRatio.png Graphic file (type png)
 
 <use figure/successRateByRelOrcaRatio.png>
 Package pdftex.def Info: figure/successRateByRelOrcaRatio.png used on input lin
-e 264.
+e 274.
 (pdftex.def)             Requested size: 321.09897pt x 123.77368pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--265
+Underfull \hbox (badness 10000) in paragraph at lines 270--275
 [][]
  []
 
 [4 <./figure/avgLOC.pdf>]
-<figure/beforeAfterBug.pdf, id=97, 505.89pt x 417.7713pt>
+<figure/count_abandoned_per_week_num.pdf, id=97, 433.62pt x 433.62pt>
+File: figure/count_abandoned_per_week_num.pdf Graphic file (type pdf)
+
+<use figure/count_abandoned_per_week_num.pdf>
+Package pdftex.def Info: figure/count_abandoned_per_week_num.pdf used on input 
+line 288.
+(pdftex.def)             Requested size: 321.09897pt x 321.11197pt.
+
+<figure/count_abandoned_per_week_rate.pdf, id=98, 433.62pt x 433.62pt>
+File: figure/count_abandoned_per_week_rate.pdf Graphic file (type pdf)
+
+<use figure/count_abandoned_per_week_rate.pdf>
+Package pdftex.def Info: figure/count_abandoned_per_week_rate.pdf used on input
+ line 292.
+(pdftex.def)             Requested size: 321.09897pt x 321.11197pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--293
+[][]
+ []
+
+
+LaTeX Warning: Float too large for page by 149.29622pt on input line 295.
+
+[5 <./figure/successRateByRelOrcaNum.png> <./figure/successRateByRelOrcaRatio.p
+ng>] [6 <./figure/count_abandoned_per_week_num.pdf> <./figure/count_abandoned_p
+er_week_rate.pdf>] <figure/beforeAfterBug.pdf, id=196, 505.89pt x 417.7713pt>
 File: figure/beforeAfterBug.pdf Graphic file (type pdf)
 
 <use figure/beforeAfterBug.pdf>
-Package pdftex.def Info: figure/beforeAfterBug.pdf used on input line 283.
+Package pdftex.def Info: figure/beforeAfterBug.pdf used on input line 329.
 (pdftex.def)             Requested size: 321.09897pt x 265.17346pt.
- [5 <./figure/successRateByRelOrcaNum.png> <./figure/successRateByRelOrcaRatio.
-png>] [6 <./figure/beforeAfterBug.pdf>]
+ [7 <./figure/beforeAfterBug.pdf>]
 (./template.aux) ) 
 Here is how much of TeX's memory you used:
- 2382 strings out of 493117
- 36052 string characters out of 6135433
- 91962 words of memory out of 5000000
- 5828 multiletter control sequences out of 15000+600000
- 9742 words of font info for 34 fonts, out of 8000000 for 9000
+ 2643 strings out of 493117
+ 39695 string characters out of 6135433
+ 96865 words of memory out of 5000000
+ 6078 multiletter control sequences out of 15000+600000
+ 10088 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,24p,962b,257s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,8n,24p,962b,261s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
@@ -287,11 +332,13 @@ s/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb>
-Output written on template.pdf (6 pages, 298698 bytes).
+y10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/latxfont
+/lcirclew.pfb>
+Output written on template.pdf (7 pages, 469089 bytes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
+ 275 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

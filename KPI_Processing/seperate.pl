@@ -17,7 +17,7 @@ while(<>)
     #$_ =~ s/-//g;
     @tmp = split(",",$_);
 	#print "--------$tmp[0],$threshold-------\n";
-    if($tmp[2] eq 'b'){print BRANCH "$_";}
+    if($tmp[1] eq 'b'){print BRANCH "$_";}
     else{print TOGGLE "$_";}
 }
 
