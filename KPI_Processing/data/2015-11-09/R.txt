@@ -1,0 +1,13 @@
+
+-------------- t-test for contribution time. Data source: sumMergeCommitByBranchOrca.txt ----------------
+	Welch Two Sample t-test
+
+data:  aa$contribution and bb$contribution
+t = -5.2606, df = 111.2, p-value = 7.042e-07
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.6889236 -0.3119284
+sample estimates:
+mean of x mean of y 
+0.5153479 1.0157739 
+

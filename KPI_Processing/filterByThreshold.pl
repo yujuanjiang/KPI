@@ -12,6 +12,7 @@ open(FILE,$file);
 while(<FILE>)
 {
     $_ =~ s/\n//g;
+    $_ =~ s/<Null>/0/g;
     @tmp = split(";",$_);
     unless($tmp[$column] > $threshold){print "$_\n";}
 }
